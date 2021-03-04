@@ -18,6 +18,7 @@ Internal marketplace,
 Creator royalty,
 Flux Capacitor's logger system.
 
+Try on https://nearfoliov3.vercel.app/
 
 Quick Start
 ===========
