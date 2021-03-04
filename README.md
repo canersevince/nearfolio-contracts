@@ -1,7 +1,22 @@
-nearfolio-repo-1
+nearfolio-contract
 ==================
 
-This app was initialized with [create-near-app]
+
+Nearfolio is a curated on-chain NFT platform built on NEAR Protocol. Nearfolio offers multi-minter collection based NFTs up to 30 editions. Holding whole metadata on blockchain, stores files on ipfs + arweave.
+Each edition is an asset on storage, has an owner.
+
+Core Features
+
+
+Ownable collections,
+Multiple minters inside of a collection,
+Multiple edition minting(between 1-30),
+Proof of ownership,
+Single edition allowances for 3rd party dApps,
+Full allowances for 3rd party dApps,
+Internal marketplace,
+Creator royalty,
+Flux Capacitor's logger system.
 
 
 Quick Start
@@ -54,7 +69,7 @@ Ensure that it's installed with `near --version` (or `npx near --version`)
 Step 1: Create an account for the contract
 ------------------------------------------
 
-Each account on NEAR can have at most one contract deployed to it. If you've already created an account such as `your-name.testnet`, you can deploy your contract to `nearfolio-repo-1.your-name.testnet`. Assuming you've already created an account on [NEAR Wallet], here's how to create `nearfolio-repo-1.your-name.testnet`:
+Each account on NEAR can have at most one contract deployed to it. If you've already created an account such as `your-name.testnet`, you can deploy your contract to `nearfolio-origin-token-model.your-name.testnet`. Assuming you've already created an account on [NEAR Wallet], here's how to create `nearfolio-origin-token-model.your-name.testnet`:
 
 1. Authorize NEAR CLI, following the commands it gives you:
 
@@ -62,7 +77,7 @@ Each account on NEAR can have at most one contract deployed to it. If you've alr
 
 2. Create a subaccount (replace `YOUR-NAME` below with your actual account name):
 
-      near create-account nearfolio-repo-1.YOUR-NAME.testnet --masterAccount YOUR-NAME.testnet
+      near create-account nearfolio-origin-token-model.YOUR-NAME.testnet --masterAccount YOUR-NAME.testnet
 
 
 Step 2: set contract name in code
@@ -70,7 +85,7 @@ Step 2: set contract name in code
 
 Modify the line in `src/config.js` that sets the account name of the contract. Set it to the account id you used above.
 
-    const CONTRACT_NAME = process.env.CONTRACT_NAME || 'nearfolio-repo-1.YOUR-NAME.testnet'
+    const CONTRACT_NAME = process.env.CONTRACT_NAME || 'nearfolio-origin-token-model.YOUR-NAME.testnet'
 
 
 Step 3: deploy!
